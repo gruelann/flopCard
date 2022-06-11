@@ -1,0 +1,336 @@
+@charset "UTF-8";
+.bg-img {
+  height: 100vh;
+  background-image: url("./images/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.cards {
+  margin: 20vh 5% 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards .card-item {
+  -ms-flex-preferred-size: calc(100% / 13);
+      flex-basis: calc(100% / 13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards .card-item .card {
+  position: relative;
+  height: 81.8px;
+  width: 54.5px;
+  margin: 10px 2px;
+}
+
+.cards .card-item .card .card-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.cards .card-item .card .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./images/default.png);
+  background-size: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.cards .card-item .card.is_active .card-img {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.cards .card-item .card.is_active .card-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cards [class*=poker_] {
+  background: url(./images/poker.png) no-repeat;
+  background-size: 1300%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cards .poker_a1 {
+  background-position: 0 .1%;
+}
+
+.cards .poker_a2 {
+  background-position: 8.333% .1%;
+}
+
+.cards .poker_a3 {
+  background-position: 16.666% .1%;
+}
+
+.cards .poker_a4 {
+  background-position: 24.999% .1%;
+}
+
+.cards .poker_a5 {
+  background-position: 33.332% .1%;
+}
+
+.cards .poker_a6 {
+  background-position: 41.665% .1%;
+}
+
+.cards .poker_a7 {
+  background-position: 49.998% .1%;
+}
+
+.cards .poker_a8 {
+  background-position: 58.331% .1%;
+}
+
+.cards .poker_a9 {
+  background-position: 66.664% .1%;
+}
+
+.cards .poker_a10 {
+  background-position: 74.997% .1%;
+}
+
+.cards .poker_a11 {
+  background-position: 83.33% .1%;
+}
+
+.cards .poker_a12 {
+  background-position: 91.663% .1%;
+}
+
+.cards .poker_a13 {
+  background-position: 99.996% .1%;
+}
+
+.cards .poker_b1 {
+  background-position: 0 33.5%;
+}
+
+.cards .poker_b2 {
+  background-position: 8.333% 33.5%;
+}
+
+.cards .poker_b3 {
+  background-position: 16.666% 33.5%;
+}
+
+.cards .poker_b4 {
+  background-position: 24.999% 33.5%;
+}
+
+.cards .poker_b5 {
+  background-position: 33.332% 33.5%;
+}
+
+.cards .poker_b6 {
+  background-position: 41.665% 33.5%;
+}
+
+.cards .poker_b7 {
+  background-position: 49.998% 33.5%;
+}
+
+.cards .poker_b8 {
+  background-position: 58.331% 33.5%;
+}
+
+.cards .poker_b9 {
+  background-position: 66.664% 33.5%;
+}
+
+.cards .poker_b10 {
+  background-position: 74.997% 33.5%;
+}
+
+.cards .poker_b11 {
+  background-position: 83.33% 33.5%;
+}
+
+.cards .poker_b12 {
+  background-position: 91.663% 33.5%;
+}
+
+.cards .poker_b13 {
+  background-position: 99.996% 33.5%;
+}
+
+.cards .poker_c1 {
+  background-position: 0 66.6%;
+}
+
+.cards .poker_c2 {
+  background-position: 8.333% 66.6%;
+}
+
+.cards .poker_c3 {
+  background-position: 16.666% 66.6%;
+}
+
+.cards .poker_c4 {
+  background-position: 24.999% 66.6%;
+}
+
+.cards .poker_c5 {
+  background-position: 33.332% 66.6%;
+}
+
+.cards .poker_c6 {
+  background-position: 41.665% 66.6%;
+}
+
+.cards .poker_c7 {
+  background-position: 49.998% 66.6%;
+}
+
+.cards .poker_c8 {
+  background-position: 58.331% 66.6%;
+}
+
+.cards .poker_c9 {
+  background-position: 66.664% 66.6%;
+}
+
+.cards .poker_c10 {
+  background-position: 74.997% 66.6%;
+}
+
+.cards .poker_c11 {
+  background-position: 83.33% 66.6%;
+}
+
+.cards .poker_c12 {
+  background-position: 91.663% 66.6%;
+}
+
+.cards .poker_c13 {
+  background-position: 99.996% 66.6%;
+}
+
+.cards .poker_d1 {
+  background-position: 0 100%;
+}
+
+.cards .poker_d2 {
+  background-position: 8.333% 100%;
+}
+
+.cards .poker_d3 {
+  background-position: 16.666% 100%;
+}
+
+.cards .poker_d4 {
+  background-position: 24.999% 100%;
+}
+
+.cards .poker_d5 {
+  background-position: 33.332% 100%;
+}
+
+.cards .poker_d6 {
+  background-position: 41.665% 100%;
+}
+
+.cards .poker_d7 {
+  background-position: 49.998% 100%;
+}
+
+.cards .poker_d8 {
+  background-position: 58.331% 100%;
+}
+
+.cards .poker_d9 {
+  background-position: 66.664% 100%;
+}
+
+.cards .poker_d10 {
+  background-position: 74.997% 100%;
+}
+
+.cards .poker_d11 {
+  background-position: 83.33% 100%;
+}
+
+.cards .poker_d12 {
+  background-position: 91.663% 100%;
+}
+
+.cards .poker_d13 {
+  background-position: 99.996% 100%;
+}
+
+.menu-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-bar .score {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'serif';
+  color: rgba(255, 255, 255, 0.811);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-left: 30px;
+}
+
+.menu-bar .score::before {
+  content: "Score：";
+}
+
+.menu-bar .score.highlight {
+  color: #ffff00c9;
+  font-size: 40px;
+}
+
+.menu-bar .timer {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'serif';
+  color: rgba(255, 255, 255, 0.811);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.menu-bar .timer::before {
+  content: "Timer：";
+}
+
+.menu-bar .timer::after {
+  content: " s";
+}
+/*# sourceMappingURL=style.css.map */
